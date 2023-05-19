@@ -1,4 +1,5 @@
 import { Component } from "react";
+import { ImSearch } from "react-icons/im";
 
 import {Header, Form, Input, Btn, BtnLable} from './Searchbar.styled';
 
@@ -9,7 +10,6 @@ export class Searchbar extends Component {
     }
 
     handleInputSearch = (e) => {
-        //console.log(e.currentTarget.value);  #049d2d #3f51b5
         this.setState({ query: e.currentTarget.value })
     };
 
@@ -22,7 +22,8 @@ export class Searchbar extends Component {
     recet() {
         this.setState({ query: '' });
     }
-
+ 
+    
     render() {
         const { query } = this.state;
         return (
@@ -30,7 +31,8 @@ export class Searchbar extends Component {
                 <Form
                     onSubmit={this.hendleFormSubmit}>
                     <Btn type="submit">
-                        <BtnLable>Search</BtnLable>
+                        
+                        <BtnLable><ImSearch /></BtnLable>
                     </Btn>
 
                     <Input

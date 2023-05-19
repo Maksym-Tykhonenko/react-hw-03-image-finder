@@ -61,13 +61,11 @@ export const Btn = styled.button`
   }
 `;
 export const BtnLable = styled.span`
-  position: absolute;
+  position: center;
+  font-size: 20px;
   width: 1px;
   height: 1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  clip-path: inset(50%);
   border: 0;
+  white-space: nowrap;
+  padding: 0;
 `;
