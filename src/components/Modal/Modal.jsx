@@ -1,7 +1,9 @@
 import { Component } from 'react';
 import { createPortal } from 'react-dom';
+import { FiX } from "react-icons/fi";
 
-import { Overlay, ModalPopUp, Btn } from './Modal.styled';
+
+import { Overlay, ModalPopUp, Btn, Icon } from './Modal.styled';
 
 
 const modalRoot = document.querySelector('#modal-root');
@@ -38,7 +40,7 @@ export class Modal extends Component {
             <Overlay
                 onClick={this.handleBackdropClick}>
                 <ModalPopUp >
-                    <Btn type='button' onClick={onClose}>X</Btn>
+                    <Btn type='button' onClick={onClose}><Icon><FiX /></Icon></Btn>
                     <img src={largeImage} alt={tags} width='700' />
                     
                 </ModalPopUp>

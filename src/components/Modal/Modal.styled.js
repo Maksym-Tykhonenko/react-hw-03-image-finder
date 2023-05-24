@@ -30,4 +30,9 @@ export const Btn = styled.button`
       :hover {
                font-size: 35px;
       }
-`;
+`;//
+ export const Icon = styled.span`
+      :hover{
+          transform: rotate(50deg);  
+      }
+ `
